@@ -1,0 +1,28 @@
+@{
+    ViewData["Title"] = "Initialize";
+}
+@model List<Box>
+
+<h1>@ViewData["Title"]</h1>
+
+<div>
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">Box Id</td>
+                <th scope="col">Weight</td>
+                <th scope="col">Part Count</td>    
+            </tr>            
+        </thead>
+        <tbody>
+        @foreach (var box in Model)
+        {
+            <tr>
+                <td>@box.BoxId</td>
+                <td>@box.Weight</td>
+                <td>@box.PartCount</td>
+            </tr>
+        }
+        </tbody>
+    </table>    
+</div>

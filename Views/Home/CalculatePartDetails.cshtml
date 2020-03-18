@@ -1,0 +1,36 @@
+@{
+    ViewData["Title"] = "Calculate Part Details";
+}
+@model PartsModel
+
+<h1>@ViewData["Title"]</h1>
+
+<div>
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">Box Id</td>
+                <th scope="col">Part Number</td>
+                <th scope="col">Part Weight</td>
+                <th scope="col">Part Cost</td>
+            </tr>            
+        </thead>
+        <tbody>
+        @foreach (var part in Model.Parts)
+        {
+            <tr>                
+                <td>@part.BoxId</td>
+                <td>@part.PartId</td>
+                <td>@part.PartWeight</td>
+                <td>@part.PartCost</td>
+            </tr>
+        }
+        </tbody>
+        <tfoot>
+            <tr>
+                <th scope="col" colspan="3">Total:</td>                
+                <th scope="col">@Model.TotalCost</td>
+            </tr>            
+        </tfoot>
+    </table>    
+</div>
