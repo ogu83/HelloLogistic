@@ -10,7 +10,7 @@ These instructions will get you a copy of the project up and running on your loc
 dotnetcore 3.1: Please follow this instructions https://dotnet.microsoft.com/download/dotnet-core/3.1
 git: Please follow this instructions https://www.atlassian.com/git/tutorials/install-git
 
-### Download && Run
+### Download & Run
 
 ```
 git clone https://github.com/ogu83/HelloLogistic.git
